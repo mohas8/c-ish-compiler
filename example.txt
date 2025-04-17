@@ -1,0 +1,29 @@
+program calculations (a, b, c) ;
+var a, b: integer;
+var c: array [0..3] of integer;
+begin
+  // Simple arithmetic
+  a = 5;
+  b = 3;
+  print(a * b - 2);
+
+  // Array operations
+  c = { 8, 6, 4, 2 };
+  print(c);
+  
+  // Modify array element
+  c[1] = (a + b) * 2;
+  print(c[1]);
+  
+  // Conditional logic
+  if a > b then {
+    print(a);
+    c[2] = a
+  } else {
+    print(b)
+  };
+  
+  // Final array state
+  print(c)
+end
+.
